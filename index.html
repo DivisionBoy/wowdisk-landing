@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>WOWDISK</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__layout header-layout left">
+            <div class="header-layout__logo"><img src="assets/logo-wowdisk.jpg" alt=""></div>
+            <nav class="header-layout__nav header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="#"> О сервисе </a></li>
+                    <li class="header-nav__item"><a href="#"> Преимущества </a></li>
+                    <li class="header-nav__item"><a href="#"> Продукты <svg class="arrow-product" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></svg></a></li>
+                    <li class="header-nav__item"><a href="#"> Подписка <img class="pro" src="assets/pro.svg" alt=""></a></li>
+                </ul>
+
+            </nav>
+            
+        </div>
+        
+        <div class="header__layout header-layout right">
+            
+            <div class="header-layout__option header-option">
+                <div class="header-option__notice"><img src="assets/bell.svg" alt=""></div>
+                <div class="header-option__lang"><img src="assets/lang_ru.svg" alt=""></div>
+                <div class="header-option__plus" id="btnMenu"><img src="assets/plus.svg" alt=""></div> 
+                <div class="header-option__menu" id="headerMenu">
+                    <ul>
+                        <li><span>О сервисе</span></li>
+                        <li><span>Преимущества</span></li>
+                        <li><span>Продукты</span></li>
+                        <li><span>Подписка PRO</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-layout__separate"></div>
+
+            <div class="header-layout__auth header-auth">
+                <div class="header-auth__ico"><img src="assets/user-ava.svg" alt=""></div>
+                <div class="header-auth__name"><span>Войти</span></div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="wrapper">
+    
+        <main class="main">
+            
+            <section class="main__dropzone dropzone">
+                <div class="dropzone__container dropzone-container">
+                    <div class="dropzone-container__top"><img src="assets/cloud-upload.svg" alt=""></div>
+                    <div class="dropzone-container__center dropzone-center">
+                        <div class="dropzone-center">
+                            <div class="dropzone-title"><h1><strong>ПЕРЕТАЩИТЕ ФАЙЛЫ&nbsp;СЮДА</strong></h1></div>
+                            <div class="dropzone-text">или выберите из списка</div>
+                            <div class="dropzone-button">Выбрать файл</div>
+                        </div>
+                    </div>
+                    <div class="dropzone-container__bottom">
+                        <span>Узнать больше</span>
+                        <img src="assets/arrow.svg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__server server">
+                
+                <div class="server__container">
+                    <div class="server__bottom server-bottom">
+                        <div class="server-bottom__dots"></div>
+                    </div>
+                    <div class="server__content server-content">
+                        <div class="server-content__service">
+                            <h1>О сервисе</h1>
+                            <span class="service-info"><b>WOW</b>DISK позволяет не только хранить ваши файлы, но и просматривать их прямо в браузере.
+                                Даже такие файлы, как<span class="service-select"> 3d модели</span>, <span class="service-select">html документы</span> или <span class="service-select"> LOTTIE</span> анимация и многие другие.
+                                Вы можете использовать сервис бесплатно, либо воспользоваться не дорогой платной подпиской, значительно расширив возможности услуг, предоставляемые сервисом.</span>
+                        </div>
+                        <div class="server-content__control server-control">
+                            <div class="server-control__button">Регистрация</div>
+                            <div class="server-control__gift server-gift">
+                                <img class="server-gift__ico" src="assets/gift.svg" alt="">
+                                <div class="server-gift__label">Пробный период, 30-дней в подарок!</div>
+                            </div>
+                            <div class="server-bottom__image image-bottom">
+                                <img class="image-bottom__server" src="assets/server.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section class="server-main__options server-options">
+                <div class="server-options__container">
+                    <div class="server-options__title">BIG DATA Сервер</div>
+                    <div class="server-options__description">Мы используем свой собственный сервер для хранения данных&nbsp;больших&nbsp;объемов.</div>
+                    <div class="server-options__advantage">
+                        <div class="server-advantage adv-list">
+                            <div class="adv-list__item adv-item">
+                                <img src="assets/server-option-1.jpg" alt="">
+                                <span class="adv-item__title"><strong>Современный сервер</strong></span>
+                                <span class="adv-item__disc">Процессор - 2.7 МГц <br> Сетевой интерфейс - 1 Гбит</span>
+                            </div>
+                            <div class="adv-list__item adv-item">
+                                <img src="assets/server-option-2.jpg" alt="">
+                                <span class="adv-item__title"><strong>Резервный бэкап</strong></span>
+                                <span class="adv-item__disc">Все загруженные файлы <br>имеют резервную копию</span>
+                            </div>
+                            <div class="adv-list__item adv-item">
+                                <img src="assets/server-option-3.jpg" alt="">
+                                <span class="adv-item__title"><strong>Технический контроль</strong></span>
+                                <span class="adv-item__disc">Постоянный контроль за <br>техническим состоянием</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__device device-main">
+                <div class="device-main__container">
+                    <div class="device-main__title"><strong>Поддерживаются все устройства</strong></div>
+                    <div class="device-main__desc">Клиентский превьювер поддерживает все устройства и браузеры, кроме устравших ИЕ. Сервис использует современные технологии с поддержкой более поздних версий любого браузера.</div>
+                    <div class="device-main__presentation"><img src="assets/devices.png" alt=""></div>
+                </div>
+            </section>
+
+            <section class="main__advantage advantage-main">
+                <div class="advantage-main__container">
+                    <div class="advantage-main__title"><strong>Особенности и преимущества</strong></div>
+                    <div class="advantage-main__desc">Основные преимущества <b>WOW</b>DISK</div>
+                    <div class="advantage-main__table advantage-table">
+                        <div class="advantage-table__header header-table">
+                            <div class="header-table__col0"></div>
+                            <div class="header-table__group">
+                                <div class="table__col1">Бесплатно</div>
+                                <div class="table__col2 col2-table">
+                                    <div class="col2-table__subs">Подписка</div>
+                                    <div class="col2-table__price">200 руб/мес.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="advantage-table__list table-list" role="list">
+                            <li class="table-list__item list-item" role="listitem">
+                                <div class="list-item__arrow"><img src="assets/arrow.svg" alt=""></div>
+                                <div class="list-item__name">Красивая/Короткая ссылка</div>
+                                <div class="list-item__group">
+                                    <div class="item__cell cell1"><img src="assets/check.svg" alt=""></div>
+                                    <div class="item__cell"><img src="assets/check.svg" alt=""></div>
+                                </div>
+                            </li>
+                            <li class="table-list__item list-item" role="listitem">
+                                <div class="list-item__arrow"><img src="assets/arrow.svg" alt=""></div>
+                                <div class="list-item__name">Комбинация креативов в список</div>
+                                <div class="list-item__group">
+                                    <div class="item__cell cell1"><img src="assets/check.svg" alt=""></div>
+                                    <div class="item__cell"><img src="assets/check.svg" alt=""></div>
+                                </div>
+                            </li>
+                            <li class="table-list__item list-item" role="listitem">
+                                <div class="list-item__arrow"><img src="assets/arrow.svg" alt=""></div>
+                                <div class="list-item__name">Автосборка баннеров по тех. требованиям</div>
+                                <div class="list-item__group">
+                                    <div class="item__cell cell1"><img src="assets/check.svg" alt=""></div>
+                                    <div class="item__cell"><img src="assets/check.svg" alt=""></div>
+                                </div>
+                            </li>
+                            <li class="table-list__item list-item" role="listitem">
+                                <div class="list-item__arrow"><img src="assets/arrow.svg" alt=""></div>
+                                <div class="list-item__name">Анти adBlock и браузерные блокировки</div>
+                                <div class="list-item__group">
+                                    <div class="item__cell cell1"><img src="assets/check.svg" alt=""></div>
+                                    <div class="item__cell"><img src="assets/check.svg" alt=""></div>
+                                </div>
+                            </li>
+                            <li class="table-list__item list-item" role="listitem">
+                                <div class="list-item__arrow"><img src="assets/arrow.svg" alt=""></div>
+                                <div class="list-item__name">Умная антикэш система</div>
+                                <div class="list-item__group">
+                                    <div class="item__cell cell1"><img src="assets/check.svg" alt=""></div>
+                                    <div class="item__cell"><img src="assets/check.svg" alt=""></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="advantage-table__footer table-footer">
+                            <div class="table-footer__button">Оформить</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantage-main__decor"></div>
+            </section>
+
+            <section class="main-subscription sub">
+                <div class="sub__container">
+                    <div class="sub__title">Подписка</div>
+                    <div class="sub__desc">Оформите подписку и используйте все возможности сервиса. <br> 
+                        Оформляя подписку по скромной цене, вы помагаете авторам поддерживать и&nbsp;развивать&nbsp;сервис.</div>
+                    <div class="sub_group sub-group">
+                        <div class="sub-group__col1 sub-col1">
+                            <div class="sub-col1__button">Оформить</div>
+                            <div class="sub-col1__offer">за <span>200</span> рублей в месяц</div>
+                        </div>
+                        <div class="sub-group__col2 sub-col2">
+                            <div class="sub-col2__offer">за <span>200</span> рублей в месяц</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <section class="main-support support">
+                <div class="support__container">
+                    <h1 class="support__title">Поддержка</h1>
+                    <div class="support__disc">Если вы столкнулись с трудностями в работе с сервисом или у вас есть своё предложение по развитию, пожалуйста, направьте свои предложения/проблемы на адрес поддержки: <b>support@wowdisk.ru</b>. <br>
+                        Вы так же можете воспользоваться <span>технической документацией.</span></div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__wow wow">
+                    <div class="wow__logo"><img loading="lazy" src="assets/logo_wowdisk_white.jpg" alt=""></div>
+                    <div class="wow__date">2017 - 2024</div>
+                </div>
+                <div class="footer__form form">
+                    <div class="form__title">Поделитесь своим мнением</div>
+                    <div class="form__name"><input type="text" name="input" aria-label="Аноним" placeholder="Аноним" autocomplete="off"></div>
+                    <div class="form__message"><textarea name="textarea" minlength="10" maxlength="20" placeholder="Текст сообщения"></textarea></div>
+                    <div class="form__button">Отправить</div>
+                </div>
+                <div class="footer__menu menu">
+                    <div class="menu__product product">
+                        <div class="product__title">Продукт</div>
+                        <div class="product__item">WOWDISK</div>
+                        <div class="product__item">SENDMAIL</div>
+                    </div>
+                    <div class="menu__service">О сервисе</div>
+                    <div class="menu__advantage">Преимущества</div>
+                    <div class="menu__subscription">Подписка</div>
+                    <div class="menu__support">support@wowdisk.ru</div>
+                </div>
+
+                <div class="footer__account">
+                    <div class="account__title">Аккаунт</div>
+                    <div class="account__sign">Вход - Регистрация</div>
+                    <div class="account__lang lang">
+                        <div class="lang__label">Язык:</div>
+                        <div class="lang__combobox combobox">
+                            <div class="combobox__label">Русский</div>
+                            <div class="combobox__arrow"><svg class="arrow-lang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000"><path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="account__help">Помощь</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+        let btnMenu = document.querySelector('#btnMenu');
+        let headerMenu = document.querySelector('#headerMenu');
+
+        btnMenu.addEventListener('click', (e)=>{
+            headerMenu.style.display = 'flex';
+            document.addEventListener('mouseup', clickDoc);
+        });
+        
+        function clickDoc(e){
+
+            if (headerMenu.contains(e.target)){
+                headerMenu.style.display = 'flex';
+            } else{
+                headerMenu.style.display = 'none';
+                document.removeEventListener('mouseup', clickDoc);
+            }
+        }
+        
+        let containerFooter = document.querySelector(".footer__container");
+        let form = document.querySelector(".footer__form");
+        let footerWow = document.querySelector(".footer__wow");
+        let footerLogo = document.querySelector(".wow__logo");
+        let isContainer = true;
+        
+        window.addEventListener('resize', onResize);
+
+        function onResize(){
+            if(window.innerWidth > 1280){
+                
+                if(!isContainer) containerFooter.insertBefore(form, footerWow.nextSibling);
+                isContainer = true;
+
+            }else{
+                
+                if(isContainer) footerWow.insertBefore(form, footerLogo.nextSibling);
+                isContainer = false;
+            }
+        }
+        
+        onResize();
+
+    </script>
+
+
+
+
+<script type="x-shader/x-vertex" id="vertexshader">
+
+    attribute float scale;
+
+    void main() {
+
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+
+        gl_PointSize = scale * ( 300.0 / - mvPosition.z );
+
+        gl_Position = projectionMatrix * mvPosition;
+
+    }
+
+</script>
+
+<script type="x-shader/x-fragment" id="fragmentshader">
+
+    uniform vec3 color;
+
+    void main() {
+
+        if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
+
+        gl_FragColor = vec4( color, 1.0 );
+
+    }
+
+</script>
+
+<script type="module">
+
+    const SEPARATION = 150, AMOUNTX = 60, AMOUNTY = 50;
+
+    let container = document.querySelector('.server-bottom__dots');
+    let camera, scene, renderer;
+
+    let particles, count = 0;
+
+    let mouseX = 0, mouseY = 0;
+
+    let windowHalfX = window.innerWidth / 2;
+    let windowHalfY = window.innerHeight / 2;
+
+    init();
+    animate();
+
+    function init() {
+
+        camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+        camera.position.z = 900;
+        camera.position.x = 0;
+        camera.position.y = 1500;
+        
+
+        scene = new THREE.Scene();
+        camera.lookAt( scene.position );
+        //
+        const numParticles = AMOUNTX * AMOUNTY;
+
+        const positions = new Float32Array( numParticles * 3 );
+        const scales = new Float32Array( numParticles );
+
+        let i = 0, j = 0;
+
+        for ( let ix = 0; ix < AMOUNTX; ix ++ ) {
+
+            for ( let iy = 0; iy < AMOUNTY; iy ++ ) {
+
+                positions[ i ] = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 ); // x
+                positions[ i + 1 ] = 0; // y
+                positions[ i + 2 ] = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) / 2 ); // z
+
+                scales[ j ] = 1;
+
+                i += 3;
+                j ++;
+
+            }
+
+        }
+
+        const geometry = new THREE.BufferGeometry();
+        geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+        geometry.setAttribute( 'scale', new THREE.BufferAttribute( scales, 1 ) );
+
+        const material = new THREE.ShaderMaterial( {
+
+            uniforms: {
+                color: { value: new THREE.Color( 0x5FC6BC ) },
+            },
+            vertexShader: document.getElementById( 'vertexshader' ).textContent,
+            fragmentShader: document.getElementById( 'fragmentshader' ).textContent
+
+        } );
+
+        //
+
+        particles = new THREE.Points( geometry, material );
+        scene.add( particles );
+
+        //
+
+        renderer = new THREE.WebGLRenderer( { antialias: true } );
+        renderer.setClearColor( 0xff0000, 0 );
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        container.appendChild( renderer.domElement );
+
+        container.style.touchAction = 'none';
+
+    }
+
+    function onWindowResize() {
+
+        windowHalfX = window.innerWidth / 2;
+        windowHalfY = window.innerHeight / 2;
+
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize( window.innerWidth, window.innerHeight );
+
+    }
+
+    //
+
+    function onPointerMove( event ) {
+
+        if ( event.isPrimary === false ) return;
+
+        mouseX = event.clientX - windowHalfX;
+        mouseY = event.clientY - windowHalfY;
+
+    }
+
+    //
+
+    function animate() {
+
+        requestAnimationFrame( animate );
+
+        render();
+
+    }
+
+    function render() {
+
+        const positions = particles.geometry.attributes.position.array;
+        const scales = particles.geometry.attributes.scale.array;
+
+        let i = 0, j = 0;
+
+        for ( let ix = 0; ix < AMOUNTX; ix ++ ) {
+
+            for ( let iy = 0; iy < AMOUNTY; iy ++ ) {
+
+                positions[ i + 1 ] = ( Math.sin( ( ix + count ) * 0.3 ) * 50 ) +
+                                ( Math.sin( ( iy + count ) * 0.5 ) * 50 );
+
+                scales[ j ] = ( Math.sin( ( ix + count ) * 0.3 ) + 1 ) * 10 +
+                                ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 10;
+
+                i += 3;
+                j ++;
+
+            }
+
+        }
+
+        particles.geometry.attributes.position.needsUpdate = true;
+        particles.geometry.attributes.scale.needsUpdate = true;
+
+        renderer.render( scene, camera );
+
+        count += 0.07;
+
+    }
+
+</script>
+    
+</body>
+</html>
